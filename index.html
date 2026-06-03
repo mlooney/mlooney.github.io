@@ -1,17 +1,27 @@
 <!doctype html>
 <html lang="en">
+	<head>
+		<style>
+.center {
+	margin: auto;
+	width: 500px;
+}
+		</style>
+	</head>
 
-<body style="margin: 0px;">
-  <script type="module">
-    import init from './curse.js'
+	<body style="margin: 0px;">
+		<div class="center">
+			<script type="module">
+				import init from './curse.js'
 
-    init().catch((error) => {
-      if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
-        throw error;
-      }
-    });
-  </script>
-</body>
+init().catch((error) => {
+if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
+throw error;
+}
+});
+</div>
+			</script>
+	</body>
 
 </html>
 
