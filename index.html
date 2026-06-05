@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<style>
+		.canvas {
+				padding: 0;
+				margin: auto;
+				display: block;
+				width: 1080px;
+		}
+	</style>
+</head>
+
+	<body style="margin: 0px;">
+		<div class="canvas">
+			<h1>Curse dc5c28f</h1>
+			<script type="module">
+				import init from './curse.js'
+
+init().catch((error) => {
+if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
+throw error;
+}
+});
+			</script>
+		</div>
+	</body>
+
+</html>
+
